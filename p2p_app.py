@@ -1,5 +1,9 @@
-c1, c2, c3, c4 = st.columns(4)              
+              import streamlit as st # This line is present above, otherwise it is not
+
+c1, c2, c3, c4 = st.columns(4)
+
 with c4:
+st.markdown(...) # Below is your previous code...
     st.markdown(f"<div style='color:#fcd535; font-size:12px; font-weight:bold; margin-bottom:5px;'>{row['payment_method']}</div>", unsafe_allow_html=True)
     if st.button(f"Trade {row['crypto_asset']}", key=f"trade_{row['id']}"):
                     st.warning("?? Secure Escrow Lock Initiated!")
