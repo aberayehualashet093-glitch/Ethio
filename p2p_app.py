@@ -1,5 +1,4 @@
-              import streamlit as st # This line is present above, otherwise it is not
-
+import streamlit as st # This line is present above, otherwise it is not
 c1, c2, c3, c4 = st.columns(4)
 
 with c4:
