@@ -1,6 +1,6 @@
 with c4:
-                st.markdown(f"<div style='color:#fcd535; font-size:12px; font-weight:bold; margin-bottom:5px;'>{row['payment_method']}</div>", unsafe_allow_html=True)
-                if st.button(f"Trade {row['crypto_asset']}", key=f"trade_{row['id']}"):
+    st.markdown(f"<div style='color:#fcd535; font-size:12px; font-weight:bold; margin-bottom:5px;'>{row['payment_method']}</div>", unsafe_allow_html=True)
+    if st.button(f"Trade {row['crypto_asset']}", key=f"trade_{row['id']}"):
                     st.warning("?? Secure Escrow Lock Initiated!")
                     if saved_accounts:
                         st.markdown("#### Send payment using your configured settlement credentials:")
@@ -8,7 +8,7 @@ with c4:
                             st.info(f"??? {acc[0]} | Holder: {acc[1]} | Account No/Phone: {acc[2]}")
                     else:
                         st.error("No active localized payment channels configured. Add your Telebirr or Neged Bank accounts in the next tab Panel.")
-            st.markdown("<hr style='margin:10px 0; border-color:#2b313a;' />", unsafe_allow_html=True)
+                    st.markdown("<hr style='margin:10px 0; border-color:#2b313a;' />", unsafe_allow_html=True)
 
 # --- TAB 2: ACCOUNTS MANAGEMENT ---
 with tab_accounts:
