@@ -16,7 +16,7 @@ if 'saved_accounts' not in st.session_state:
 trade_row = {
     'crypto_asset': 'USDT',
     'id': 'TX-9921',
-    'price_per_dollar': '125.50 ETB',
+    'price_per_dollar': '185.50 ETB',
     'min_limit': '10 USDT',
     'max_limit': '500 USDT'
 }
